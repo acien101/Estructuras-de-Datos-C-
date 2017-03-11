@@ -12,12 +12,11 @@
 using namespace std;
 #include "Pila.h"
 
-int contarPilaFondo(Pila &pila, int i){
+int contarPilaFondo(Pila &pila, int &i){
 	int elem, suma  = 0;
 
 	if (!pila.pilaVacia()){
 			elem = pila.desapilar();
-			i++;
 			suma = contarPilaFondo(pila, i);	//Fase de vuelta
 			i--;
 			if(!(i % 2)){				//Clave par
@@ -32,6 +31,7 @@ int contarPilaFondo(Pila &pila, int i){
 
 int main(){
 	Pila pila1;
+	int i = 0;
 
 	pila1.apilar(7);
 	pila1.apilar(4);
@@ -41,7 +41,7 @@ int main(){
 	pila1.apilar(2);
 	pila1.imprimirPila();
 
-	cout << "Sumar claves pares en posiciones pares desde el fondo: " << contarPilaFondo(pila1, 0) << endl;
+	cout << "Sumar claves pares en posiciones pares desde el fondo: " << contarPilaFondo(pila1, i) << endl;
 
  	pila1.~Pila();
 	return 0;
