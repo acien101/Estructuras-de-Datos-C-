@@ -10,7 +10,7 @@
  *  Created on: 4 mar. 2017
  *      Author: amil101
  *
- *	Ejecicio colas, recibiendo una cola y un número entero x, si la clave x se encuentra en la
+ *	Ejercicio colas, recibiendo una cola y un número entero x, si la clave x se encuentra en la
  *	cola, devuelva la suma de las claves de la misma hasta llegar a x (sin incluir la clave x). 
  *	Si la  clave x no se encuentra en la cola, el método deberá devolver la suma de todas sus claves.
  *	Se dispone de la operación numElemCola(), pero no invertirCola(). Solución recursiva.
