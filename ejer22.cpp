@@ -26,8 +26,7 @@ int contarPilaCima (Pila &pila, int inicio){
 					suma += elem;
 				}
 			}
-			suma += contarPilaCima(pila, inicio);	//Fase de vuelta
-			inicio--;				
+			suma += contarPilaCima(pila, inicio);	//Fase de vuelta			
 			pila.apilar(elem);
 	}
 	return suma;
