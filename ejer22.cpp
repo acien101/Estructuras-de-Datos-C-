@@ -17,20 +17,20 @@ int contarPilaCima (Pila &pila, int inicio){
 	if (!pila.pilaVacia()){
 			elem = pila.desapilar();
 			inicio++;
-			if(!(inicio % 2)){			//PAR
-				if(!(elem % 2)){ //PAR
+			if(!(inicio % 2)){			//La clave es par
+				if(!(elem % 2)){ 		//El elemento es par
 					suma += elem;
 				}
 			}
-			suma += contarPilaCima(pila, inicio);
-			inicio--;
+			suma += contarPilaCima(pila, inicio);	//Fase de vuelta
+			inicio--;				
 			pila.apilar(elem);
 	}
 	return suma;
 }
 
 
-int main_terminao(){
+int main(){
 	Pila pila1;
 
 	pila1.apilar(7);
