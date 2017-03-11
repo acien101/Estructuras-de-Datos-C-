@@ -21,9 +21,7 @@ using namespace std;
 #include "Cola.h"
 
 int sumaHastaEncontrarRecur(Cola &cola, int x , int elemCola, bool encontrado){
-	int elem, suma = 0, init = 0;
-
-	init++;
+	int elem, suma = 0;
 
 	if (elemCola > 0){
 		elem = cola.desencolar();
