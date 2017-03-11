@@ -3,6 +3,10 @@
  *
  *  Created on: 4 mar. 2017
  *      Author: amil101
+ *
+ *	Ejercicio de Pilas, que devuelva la suma de las claves pares de una pila de 
+ * 	números enteros que ocupan pares empezando a contar desde el fondo
+ *
  */
 #include <iostream>
 using namespace std;

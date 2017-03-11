@@ -3,6 +3,12 @@
  *
  *  Created on: 4 mar. 2017
  *      Author: amil101
+ *
+ *	Ejercicio de Pilas, que recibiendo una pila y un numero entero x, si la clave
+ *	x se encuentra en la pila. devuelva la suma de las claves de la misma hasta llegar a x
+ *	(sin incluir la clave x). Si la clave x no se encuentra en la pila, el método devuelve
+ *	la suma de todas sus claves
+ *
  */
 #include <iostream>
 using namespace std;
